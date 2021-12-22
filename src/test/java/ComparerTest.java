@@ -28,7 +28,7 @@ public class ComparerTest {
     @Test(priority = 3)
     public void compareUIandAPI()
     {
-        System.out.println("Details from UI Source = " + apiCityDetails);
+        System.out.println("Details from API Source = " + apiCityDetails);
         System.out.println("Details from UI Source = " + uiCityDetails);
     }
 }
