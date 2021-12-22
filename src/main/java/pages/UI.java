@@ -36,6 +36,7 @@ public class UI {
                 uiCityDetails.put("feels_like",realFeel.getText());
                 uiCityDetails.put("humidity",humidity.getText());
                 uiCityDetails.put("pressure",pressure.getText());
+                driver.close();
                 return uiCityDetails;
         }
 
