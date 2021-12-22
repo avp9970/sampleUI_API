@@ -17,7 +17,6 @@ public class ComparerTest {
     {
         API api = new API();
         apiCityDetails = api.getAPIDetails();
-
     }
     @Test(priority = 2)
     public void getUIWeatherDetails()
@@ -25,12 +24,11 @@ public class ComparerTest {
         WebDriver driver = utils.startBrowser();
         UI ui = new UI();
         uiCityDetails = ui.UIWeatherDetails(driver);
-        System.out.println("Details from UI Source = " + uiCityDetails);
     }
     @Test(priority = 3)
     public void compareUIandAPI()
     {
-
-
+        System.out.println("Details from UI Source = " + apiCityDetails);
+        System.out.println("Details from UI Source = " + uiCityDetails);
     }
 }
